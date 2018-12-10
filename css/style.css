@@ -1,0 +1,25 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#nav {
+    display: inline-block;
+    width: 700px;
+    margin: 0 auto;
+    list-style: none;
+    /* vertical-align: top; ONLY WITH DISPLAY INLINE-BLOCK*/
+    text-align: center;
+}
+
+#nav li {
+    float: left;
+}
+
+#nav a {
+    display: inline-block;
+    text-align: center;
+    width: 75px;
+    /* fixed width */
+    text-decoration: none;
+}
