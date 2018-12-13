@@ -1,0 +1,62 @@
+.holder {
+  width: 600px;
+  height: 750px;
+}
+.dropzone {
+  padding: 10px;
+  width: 600px;
+  height: 600px;
+  float:left;
+}
+
+
+.draggable {
+  width: 100px;
+  height: 100px;
+  float:left;
+  padding:10px;
+  margin: 10px;
+  
+}
+
+.patch {
+  width: 70px;
+  height: 82px;
+  float: right;
+}
+
+.images .patch{
+  display: flex;
+  flex-wrap: wrap; 
+  position: relative;
+  left: 360px;
+  top: 160px;
+  display: block;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap; 
+  position: relative;
+  left: 160px;
+  top: 160px;
+  display: block;
+  width: 400px;
+  padding-right: 10px;
+}
+.sweater {
+  width: 500px;
+  height: 500px;
+}
+
+.sizeselector {
+  position: relative;
+  top: 750px;
+  right: 650px;
+}
+.createbutton {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #f44336;
+    border-radius: 8px;
+}

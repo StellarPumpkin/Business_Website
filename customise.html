@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="custom.css" />
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Inconsolata|Josefin+Sans" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/interact.js/1.2.6/interact.min.js"></script> 
+</head>
+
+<body>
+    <div class="sticky">
+        <div id="centeredmenu">
+                <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="shop.html">Shop</a></li>
+                   <li><a href="customise.html">Make Your Own</a></li>
+                </ul>
+             </div>
+            </div>
+    <header></header>
+
+<main>
+    
+  
+  <div class="left"></div>
+  <div class="middle"> <!--Playing with drag and drop-->
+    <h2>Make the ugliest sweater possible by dragging and dropping patches on it!</h2>
+    <div class="holder">
+   <div class="images">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/a-red.png" alt="Letter A red" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/aroundtheworld.png" alt="Globe" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/badainteasy.png" alt="Handcuffs and pink color" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/ball-blue.png" alt="Blue ball" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/ball-red.png" alt="Red ball" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/bear.png" alt="Bear" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/bluelight.png" alt="Blue light" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/boot.png" alt="Boot" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/car-tree-red.png" alt="red car and christmas tree" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/collection-glitter-stars.png" alt="glitters" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/d-red.png" alt="Letter D red" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/earth.png" alt="Earth" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/G-red-written.png" alt="Letter G red" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/girl-scouts.png" alt="Girl scouts" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/go-outside.png" alt="Go outside patch" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/greenlight.png" alt="Green light" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/lights1.png" alt="Lights" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/m-red.png" alt="Letter M red" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/orangelight.png" alt="orange light" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/ornament.png" alt="ornament" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/redlight.png" alt="red light" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/santa-baby.png" alt="santa baby" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/snowflake.png" alt="Snowflake" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/star-gold.png" alt="Gold star" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/tree-redgreen.png" alt="Red green tree" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/tree.png" alt="tree" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/ugly-xmas-sweater.png" alt="Ugly x-mas sweater" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/x-red.png" alt="Letter X red" class="patch">
+                <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/yellowlight.png" alt="Yellow Light" class="patch">
+            
+            </div>
+                
+          
+            <br>
+            <div id="dropzone" class="dropzone">
+                <img src="Custome symbols/emptysweater2.png" alt="sweater" class="sweater">
+            </div>
+        </div>
+    </div>
+    <div class="sizeselector">
+            <select>
+              <option value="0">Select your size!</option>
+              <option value="1">XS:</option>
+              <option value="2">S</option>
+              <option value="3">M</option>
+              <option value="4">L</option>
+              <option value="5">XL</option>
+              <option value="6">XXL</option>
+              
+            </select>
+            <button type="button" class="createbutton">Create!</button>
+          </div>
+  <div class="right"></div>
+</main>
+
+
+
+
+
+
+<footer></footer>
+
+</body>
+
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+let navbar = document.getElementById("navbar");
+
+//Get the offset position of the navbar
+let sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+    } else { 
+        navbar.classList.remove("sticky");
+    }
+}
+</script>
+
+<script>
+interact('.patch')  
+  .draggable({
+    // enable inertial throwing
+    inertia: true,
+    // keep the element within the area of it's parent
+    restrict: {
+      restriction: "child",
+      endOnly: true,
+      elementRect: { top: 0, left: 0, bottom: 1, right: 1 }
+    },
+    // enable autoScroll
+    autoScroll: true,
+    // call this function on every dragmove event
+    onmove: dragMoveListener,
+  });
+
+  function dragMoveListener (event) {
+    var target = event.target,
+        // keep the dragged position in the data-x/data-y attributes
+        x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
+        y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+
+    // translate the element
+    target.style.webkitTransform =
+    target.style.transform =
+      'translate(' + x + 'px, ' + y + 'px)';
+
+    // update the posiion attributes
+    target.setAttribute('data-x', x);
+    target.setAttribute('data-y', y);
+  }
+
+// enable draggables to be dropped into this
+interact('.dropzone').dropzone({  
+  // Require a 50% element overlap for a drop to be possible
+  overlap: 0.50,
+
+  // listen for drop related events:
+
+  ondropactivate: function (event) {
+    // add active dropzone feedback
+    event.target.classList.add('drop-active');
+  },
+  ondragenter: function (event) {
+    var draggableElement = event.relatedTarget,
+        dropzoneElement = event.target;
+
+    // feedback the possibility of a drop
+    dropzoneElement.classList.add('drop-target');
+  },
+  ondragleave: function (event) {
+    // remove the drop feedback style
+    event.target.classList.remove('drop-target');
+  },
+  /*ondrop: function (event) {
+    event.relatedTarget.textContent = 'Dropped';
+  },*/
+  ondropdeactivate: function (event) {
+    // remove active dropzone feedback
+    event.target.classList.remove('drop-active');
+    event.target.classList.remove('drop-target');
+  }
+});
+</script>
+
+
+</html>
