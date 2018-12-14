@@ -6,30 +6,48 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Inconsolata|Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Inconsolata|Didact+Gothic" rel="stylesheet">
     <script src="main.js"></script>
+    <script type="text/javascript" src="js/simpleCart.js"></script>
+    <script src="js/snowstorm.js"></script>
+    <script type="text/javascript">
+        simpleCart.checkoutTo = PayPal;
+        simpleCart.email = "you@yours.com";
+    </script>
 </head>
 
 <body>
     <div class="sticky">
+
         <div id="centeredmenu">
-                <ul>
-                   <li><a href="index.html">Home</a></li>
-                   <li><a href="about.html">About</a></li>
-                   <li><a href="shop.html">Shop</a></li>
-                   <li><a href="customise.html">Make Your Own</a></li>
-                </ul>
-             </div>
+            <img src=img/logo.png> <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- <header><div class="hero"><img src=img/finest-sweaters.jpg width=800 height=300></div></header> -->
+
+    <main>
+        <div class="left"></div>
+        <div class="middle">
+            <div class="content-explanation"><br><br><br><br><br><br>
+                <h1>Tired of wearing boring ugly x-mas sweaters every year?<img src=img/createyourown.png class="index-sweater"><br> Create your own with our tool & make
+                    it like you want!</h1>
+                <br><br>
+                <p>Customize your own ugly x-mas sweater<br> with our “drag & drop” customization tool!<br><br>Add your
+                    (mothers) name, add silly figures<br>or other objects and steal the award <br> for “best ugly x-mas
+                    sweater” this year!</p>
+                    <img src=img/allthesepatches.png class="index-patches">
+                    <div class="clickhere"><a href="customise.html">Click here!</a></div>
+                    <br><br><br><br><br><p>This could be a great piece of text!<br> But Henk is busy with other things<br><br>Please wait a bit and <br>hopefully he puts something here <br> Hellogoodbye</p>
             </div>
-    <header></header>
+        </div>
+        <div class="right"></div>
+    </main>
 
-<main>
-  <div class="left"></div>
-  <div class="middle"></div>
-  <div class="right"></div>
-</main>
-
-<footer></footer>
+    <footer>&copy; Copyright 2018-2019 The Knit Before Christmas</footer>
 
 </body>
 
@@ -51,6 +69,10 @@ function myFunction() {
         navbar.classList.remove("sticky");
     }
 }
+</script>
+
+<script>
+snowStorm.flakesMax = 70;
 </script>
 
 
