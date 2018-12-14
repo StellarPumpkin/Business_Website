@@ -1,43 +1,66 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Inconsolata|Didact+Gothic" rel="stylesheet">
-    <script src="main.js"></script>
-    <script type="text/javascript" src="js/simpleCart.js"></script>
-    <script src="js/snowstorm.js"></script>
-    <script type="text/javascript">
-        simpleCart.checkoutTo = PayPal;
-        simpleCart.email = "you@yours.com";
-    </script>
-</head>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Inconsolata|Didact+Gothic" rel="stylesheet">
+        <script src="main.js"></script>
+        <script type="text/javascript" src="js/simpleCart.js"></script>
+        <script src="js/snowstorm.js"></script>
+        <script type="text/javascript">
+            simpleCart.checkoutTo = PayPal;
+            simpleCart.email = "you@yours.com";
+        </script>
+    </head>
 
-<body>
-    <div class="sticky">
+    <body>
+        <div class="sticky">
 
-        <div id="centeredmenu">
-            <img src=img/logo.png> <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="shop.html">Shop</a></li>
-            <li><a href="customise.html">Make Your Own</a></li>
-            </ul>
+            <div id="centeredmenu">
+                <img src=img/logo.png> <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="customise.html">Make Your Own</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <!-- <header><div class="hero"><img src=img/finest-sweaters.jpg width=800 height=300></div></header> -->
+        <!-- <header><div class="hero"><img src=img/finest-sweaters.jpg width=800 height=300></div></header> -->
 
-    <main>
+        <main>
             <div class="left"></div>
             <div class="middle">
-                <br><br><br><br><br><br><br><h1>Buy one of our pre-made sweaters, uglyness guaranteed!</h1><br>
+                <br><br><br><br><br><br><br>
+                <h1>Buy one of our pre-made sweaters, uglyness guaranteed!</h1><br>
+                <div class="simpleCart_shelfItem">
+                    <h2 class="uglySweaterOne"> Ugly Sweater #1 </h2>
+                    <img src=img/emptysweater2.png class="shopSweaters"><br>
+                    <select class="item_size">
+                        <option value="Small"> Small </option>
+                        <option value="Medium"> Medium </option>
+                        <option value="Large"> Large </option>
+                    </select>
+                    <span class="item_price">€30.00</span><br>
+                    <a href="javascript:;" class="item_add"> add to basket </a>
+
                     <div class="simpleCart_shelfItem">
-                            <h2 class="uglySweaterOne"> Ugly Sweater #1 </h2>
-                            <img src=img/emptysweater2.png class="shopSweaters"><br>
+                        <h2 class="uglySweaterTwo"> Ugly Sweater #2 </h2>
+                        <img src=img/emptysweater3.png class="shopSweaters"><br>
+                        <select class="item_size">
+                            <option value="Small"> Small </option>
+                            <option value="Medium"> Medium </option>
+                            <option value="Large"> Large </option>
+                        </select>
+                        <span class="item_price">€30.00</span><br>
+                        <a href="javascript:;" class="item_add"> add to basket </a>
+
+                        <div class="simpleCart_shelfItem">
+                            <h2 class="uglySweaterThree"> Ugly Sweater #3 </h2><br>
+                            <img src=img/emptysweater4.png class="shopSweaters"><br>
                             <select class="item_size">
                                 <option value="Small"> Small </option>
                                 <option value="Medium"> Medium </option>
@@ -45,83 +68,65 @@
                             </select>
                             <span class="item_price">€30.00</span><br>
                             <a href="javascript:;" class="item_add"> add to basket </a>
-
-                            <div class="simpleCart_shelfItem">
-                                <h2 class="uglySweaterTwo"> Ugly Sweater #2 </h2>
-                                <img src=img/emptysweater3.png class="shopSweaters"><br>
-                                <select class="item_size">
-                                    <option value="Small"> Small </option>
-                                    <option value="Medium"> Medium </option>
-                                    <option value="Large"> Large </option>
-                                </select>
-                                <span class="item_price">€30.00</span><br>
-                                <a href="javascript:;" class="item_add"> add to basket </a>
-            
-                                <div class="simpleCart_shelfItem">
-                                    <h2 class="uglySweaterThree"> Ugly Sweater #3 </h2><br>
-                                    <img src=img/emptysweater4.png class="shopSweaters"><br>
-                                    <select class="item_size">
-                                        <option value="Small"> Small </option>
-                                        <option value="Medium"> Medium </option>
-                                        <option value="Large"> Large </option>
-                                    </select>
-                                    <span class="item_price">€30.00</span><br>
-                                    <a href="javascript:;" class="item_add"> add to basket </a>
-                                    <br><br><br><br><br>
-                                </div>
-                            </div>
+                            <br><br><br><br><br>
                         </div>
-                        <a href="javascript:;" class="simpleCart_checkout"></a>
+                    </div>
+                </div>
+                <a href="javascript:;" class="simpleCart_checkout"></a>
 
-            </div> 
-            <div class="custombasketheading"><br><br><br><br><br><h3>your basket</h3><br>You have<b><br><span class="simpleCart_quantity"></span></b> items in<br> your basket.<br><br>
+            </div>
+            <div class="custombasketheading"><br><br><br><br><br>
+                <h3>your basket</h3><br>You have<b><br><span class="simpleCart_quantity"></span></b> items in<br> your
+                basket.<br><br>
                 Basket total: <div class="simpleCart_total"></div><br>
-            <a href="javascript:;" class="simpleCart_checkout">Checkout</a><br>
-            <a href="javascript:;" class="simpleCart_empty">Empty</a></div>
+                <a href="javascript:;" class="simpleCart_checkout">Checkout</a><br>
+                <a href="javascript:;" class="simpleCart_empty">Empty</a>
+            </div>
             <div class="right">
-           
+
             </div>
         </main>
 
-    <footer>&copy; Copyright 2018-2019 The Knit Before Christmas
-        <a href="https://www.facebook.com/" class="socialmedia facebook"><img src="img/ATEHSnowflakeIcons4/facebook.png" alt="link to facebok"></a><br>
-                <a href="https://www.instagram.com/" class="socialmedia instagram"><img src="img/ATEHSnowflakeIcons4/instagram.png" alt="link to Instagram"></a><br>
-                <a href="mailto:natemikele@gmail.com" class="socialmedia email"><img src="img/ATEHSnowflakeIcons4/email.png" alt="link to send mail"></a> 
-    </footer>
+        <footer>&copy; Copyright 2018-2019 The Knit Before Christmas
+            <a href="https://www.facebook.com/" class="socialmedia facebook" target="_blank"><img src="img/ATEHSnowflakeIcons4/facebook.png"
+                    alt="link to facebok"></a><br>
+            <a href="https://www.instagram.com/" class="socialmedia instagram" target="_blank"><img src="img/ATEHSnowflakeIcons4/instagram.png"
+                    alt="link to Instagram"></a><br>
+            <a href="mailto:natemikele@gmail.com" class="socialmedia email" target="_blank"><img src="img/ATEHSnowflakeIcons4/email.png"
+                    alt="link to send mail"></a>
+        </footer>
 
-</body>
+    </body>
 
-<script>
-    // When the user scrolls the page, execute myFunction
-    window.onscroll = function () {
-        myFunction()
-    };
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () {
+            myFunction()
+        };
 
-    // Get the navbar
-    let navbar = document.getElementById("navbar");
+        // Get the navbar
+        let navbar = document.getElementById("navbar");
 
-    //Get the offset position of the navbar
-    let sticky = navbar.offsetTop;
+        //Get the offset position of the navbar
+        let sticky = navbar.offsetTop;
 
-    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-    function myFunction() {
-        if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-        } else {
-            navbar.classList.remove("sticky");
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
         }
-    }
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<script>
-snowStorm.flakesMax = 70;
-</script>
+    <script>
+        snowStorm.flakesMax = 70;
+    </script>
 
-<script>
-simpleCart.
-simpleCart.currency( "EUR" )
-</script>
-
-
+    <script>
+        simpleCart.
+        simpleCart.currency("EUR")
+    </script>
 </html>
