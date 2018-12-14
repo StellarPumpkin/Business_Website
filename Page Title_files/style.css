@@ -10,6 +10,19 @@ header {
   background-color: rgb(243, 174, 174);
 }
 
+.hero {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  /* width: 100%;
+    background-image: url("../img/finest-sweaters.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
 .content-explanation {
   font-size: 20px;
   text-align: center;
@@ -24,14 +37,13 @@ header {
 }
 
 .clickhere a {
-  color: rgb(205, 11, 11);
   font-size: 30px;
   text-align: center;
   text-decoration: none;
 }
 
 .clickhere a:hover {
-  color: rgb(11, 150, 205);
+  color: rgb(205, 11, 11);
 }
 
 .index-sweater {
@@ -44,7 +56,6 @@ header {
   padding: 80px;
 }
 
-/* Flex layout */
 main {
   flex: 1;
   display: flex;
@@ -65,7 +76,6 @@ main {
   font-family: 'Didact Gothic', sans-serif;
 }
 
-/* navigation bar */
 .sticky {
   position: fixed;
   top: 0;
@@ -95,11 +105,10 @@ main {
   align-content: center;
 }
 
-/* Logo */
 #centeredmenu img {
   width: 200px;
   height: 100px;
-  /* move logo */
+  /* hier op letten */
   padding-left: 80px;
   float: left;
 }
@@ -129,15 +138,13 @@ main {
 
 #centeredmenu ul li a:hover {
   color: rgb(205, 11, 11);
+  
 }
 
-/* Sweater image size on Shop */
 .shopSweaters {
   width: 200px;
   height: 200px;
 }
-
-/* Footer */
 footer {
   flex: 0 0 50px;
   background-color: rgb(205, 11, 11);
@@ -146,13 +153,11 @@ footer {
   font-size: 14;
   font-family: 'Inconsolata', monospace;
 }
-
 /*About*/
 .knitbeforechristmashighlight {
   color: red;
   letter-spacing: 2px;
 }
-
 .aboutcontent {
   font-size: 25px;
   text-align: center;
@@ -181,10 +186,8 @@ footer {
 .custominbasket {
   position: relative;
   top: 1000px;
-  height: 00px;
 }
 .custombasketheading {
   position: relative;
   left: 130px;
-  font-family: 'Didact Gothic', sans-serif;
 }

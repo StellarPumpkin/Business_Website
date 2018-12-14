@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="custom.css" />
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Inconsolata|Josefin+Sans" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Inconsolata|Didact+Gothic" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/interact.js/1.2.6/interact.min.js"></script> 
     <script src="main.js"></script>
     <script type="text/javascript" src="js/simpleCart.js"></script>
@@ -20,7 +19,7 @@
 </head>
 
 <body>
-    <div class="sticky">
+   <div class="sticky">
 
         <div id="centeredmenu">
             <img src=img/logo.png> <ul>
@@ -38,7 +37,7 @@
   
   <div class="left"></div>
   <div class="middle"> <!--Playing with drag and drop-->
-    <h2>Make the ugliest sweater possible by dragging and dropping patches on it!</h2>
+    <h2 class="customheading"><span class="maketheugliest">Make the ugliest </span> sweater  possible by dragging and dropping patches on it!</h2>
     <div class="holder">
    <div class="images">
                 <img src="Custome symbols/UGLY SWEATERS TEEAAM (1)/Patches/a-red.png" alt="Letter A red" class="patch">
@@ -80,19 +79,21 @@
             </div>
         </div>
     </div>
-    <div class="sizeselector">
-            <select>
-              <option value="0">Select your size!</option>
-              <option value="1">XS:</option>
-              <option value="2">S</option>
-              <option value="3">M</option>
-              <option value="4">L</option>
-              <option value="5">XL</option>
-              <option value="6">XXL</option>
-              
-            </select>
-            <button type="button" class="createbutton">Create!</button>
-          </div>
+    <div class="custominbasket">
+        <select class="item_size">
+            <option value="Small"> Small </option>
+            <option value="Medium"> Medium </option>
+            <option value="Large"> Large </option>
+        </select>
+        <span class="item_price">€30.00</span>
+        <a href="javascript:;" class="item_add"> Add to Basket </a>
+    
+    <a href="javascript:;" class="simpleCart_checkout"></a>
+  </div>
+  <div class="custombasketheading"><br><br><br><br><br><h2>BASKET</h2><br>You have<b><br><span class="simpleCart_quantity"></span></b> items in<br> your Basket.<br>
+    Cart total: <div class="simpleCart_total"></div>
+    <a href="javascript:;" class="simpleCart_checkout">Checkout</a><br>
+    <a href="javascript:;" class="simpleCart_empty">Empty</a></div></div>
   <div class="right"></div>
 </main>
 
@@ -104,7 +105,7 @@
 <footer>&copy; Copyright 2018-2019 The Knit Before Christmas
     <a href="https://www.facebook.com/" class="socialmedia facebook"><img src="ATEHSnowflakeIcons4/facebook.png"
       alt="link to facebok"></a><br>
-<a href="https://www.instagram.com/?hl=en" class="socialmedia instagram"><img src="ATEHSnowflakeIcons4/instagram.png"
+<a href="https://www.instagram.com/" class="socialmedia instagram"><img src="ATEHSnowflakeIcons4/instagram.png"
       alt="link to Instagram"></a><br>
 <a href="mailto:natemikele@gmail.com" class="socialmedia email"><img src="ATEHSnowflakeIcons4/email.png"
       alt="link to send mail"></a>
@@ -199,8 +200,8 @@ interact('.dropzone').dropzone({
 </script>
 
 <script>
-snowStorm.flakesMax = 70;
-</script>
-
+    snowStorm.flakesMax = 70;
+    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </html>
