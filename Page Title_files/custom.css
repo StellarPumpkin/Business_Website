@@ -22,14 +22,6 @@
 .customheading {
   position: relative;
   top: 200px;
-  left: 130px;
-  font-size: 30px;
-  text-align: center;
-  color: rgb(16, 53, 158);
-  text-indent: 10px;
-}
-.maketheugliest {
-  color: red;
 }
 
 .patch {
