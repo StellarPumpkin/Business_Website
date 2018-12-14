@@ -10,20 +10,28 @@
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Inconsolata|Josefin+Sans" rel="stylesheet">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/interact.js/1.2.6/interact.min.js"></script> 
+    <script src="main.js"></script>
+    <script type="text/javascript" src="js/simpleCart.js"></script>
+    <script src="js/snowstorm.js"></script>
+    <script type="text/javascript">
+        simpleCart.checkoutTo = PayPal;
+        simpleCart.email = "you@yours.com";
+    </script>
 </head>
 
 <body>
     <div class="sticky">
+
         <div id="centeredmenu">
-                <ul>
-                   <li><a href="index.html">Home</a></li>
-                   <li><a href="about.html">About</a></li>
-                   <li><a href="shop.html">Shop</a></li>
-                   <li><a href="customise.html">Make Your Own</a></li>
-                </ul>
-             </div>
-            </div>
-    <header></header>
+            <img src=img/logo.png> <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="customise.html">Make Your Own</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--<header></header>-->
 
 <main>
     
@@ -93,7 +101,14 @@
 
 
 
-<footer></footer>
+<footer>&copy; Copyright 2018-2019 The Knit Before Christmas
+    <a href="https://www.facebook.com/" class="socialmedia facebook"><img src="ATEHSnowflakeIcons4/facebook.png"
+      alt="link to facebok"></a><br>
+<a href="https://www.instagram.com/?hl=en" class="socialmedia instagram"><img src="ATEHSnowflakeIcons4/instagram.png"
+      alt="link to Instagram"></a><br>
+<a href="mailto:natemikele@gmail.com" class="socialmedia email"><img src="ATEHSnowflakeIcons4/email.png"
+      alt="link to send mail"></a>
+</footer>
 
 </body>
 
@@ -182,6 +197,9 @@ interact('.dropzone').dropzone({
   }
 });
 </script>
+<script>
+    snowStorm.flakesMax = 70;
+    </script>
 
 
 </html>

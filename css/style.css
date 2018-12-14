@@ -145,3 +145,32 @@ footer {
   font-size: 14;
   font-family: 'Inconsolata', monospace;
 }
+/*About*/
+.knitbeforechristmashighlight {
+  color: red;
+  letter-spacing: 2px;
+}
+.aboutcontent {
+  font-size: 25px;
+  text-align: center;
+  width: 95%;
+  color: rgb(16, 53, 158);
+  text-indent: 10px;
+  line-height: 1.5;
+  word-spacing: 5px;
+  margin: auto;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/*social media buttons */
+.socialmedia {
+  float: right;
+}
+.socialmedia:hover {
+  opacity: 0.8;
+}
+.email, .instagram, .facebook{
+  padding-right: 7px;
+}

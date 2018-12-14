@@ -1,56 +1,81 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Inconsolata|Josefin+Sans" rel="stylesheet">
-    <script src="main.js"></script>
-</head>
 
-<body>
-    <div class="sticky">
-        <div id="centeredmenu">
-                <ul>
-                   <li><a href="index.html">Home</a></li>
-                   <li><a href="about.html">About</a></li>
-                   <li><a href="shop.html">Shop</a></li>
-                   <li><a href="customise.html">Make Your Own</a></li>
-                </ul>
-             </div>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Inconsolata|Didact+Gothic" rel="stylesheet">
+        <script src="main.js"></script>
+        <script type="text/javascript" src="js/simpleCart.js"></script>
+        <script src="js/snowstorm.js"></script>
+        <script type="text/javascript">
+            simpleCart.checkoutTo = PayPal;
+            simpleCart.email = "you@yours.com";
+        </script>
+    </head>
+
+    <body>
+            <div class="sticky">
+
+                    <div id="centeredmenu">
+                        <img src=img/logo.png> <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="customise.html">Make Your Own</a></li>
+                        </ul>
+                    </div>
+                </div>
+        <!--<header></header>-->
+
+        <main>
+            <div class="left"></div>
+            <div class="middle"><br><br><br><br><br><br>
+                <p class="aboutcontent">Imagine the world where there would be no Christmas Sweaters. 
+                    <br>
+                    Decent, isn’t it? 
+                    <br>
+                   However, Christmas Sweaters are part of the life on Earth, thus we can’t really ignore these ugly creations. <br>
+                    That’s why we present you <span class="knitbeforechristmashighlight">The Knit Before Christmas </span>:  a place, where you can choose yourself how ugly your sweater is going to be! We, in our turn, promise you to do the actual knit before Christmas.  The unique customisation will stop you from looking around parties, searching for people who might be wearing the same sweater as you. We can proudly say that all our sweaters are in limited editions!
+                   </p>
             </div>
-    <header></header>
+            <div class="right"></div>
+        </main>
+        <footer>&copy; Copyright 2018-2019 The Knit Before Christmas
+                <a href="https://www.facebook.com/" class="socialmedia facebook"><img src="ATEHSnowflakeIcons4/facebook.png" alt="link to facebok"></a><br>
+                <a href="https://www.instagram.com/?hl=en" class="socialmedia instagram"><img src="ATEHSnowflakeIcons4/instagram.png" alt="link to Instagram"></a><br>
+                <a href="mailto:natemikele@gmail.com" class="socialmedia email"><img src="ATEHSnowflakeIcons4/email.png" alt="link to send mail"></a> 
+        </footer>
 
-<main>
-  <div class="left"></div>
-  <div class="middle"></div>
-  <div class="right"></div>
-</main>
-<footer></footer>
+    </body>
 
-</body>
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () {
+            myFunction()
+        };
 
-<script>
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+        // Get the navbar
+        let navbar = document.getElementById("navbar");
 
-// Get the navbar
-let navbar = document.getElementById("navbar");
+        //Get the offset position of the navbar
+        let sticky = navbar.offsetTop;
 
-//Get the offset position of the navbar
-let sticky = navbar.offsetTop;
-
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-    } else { 
-        navbar.classList.remove("sticky");
-    }
-}
-</script>
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    <script>
+        snowStorm.flakesMax = 70;
+    </script>
 
 
 </html>
