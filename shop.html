@@ -1,99 +1,115 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Inconsolata|Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Inconsolata|Didact+Gothic" rel="stylesheet">
     <script src="main.js"></script>
+    <script type="text/javascript" src="js/simpleCart.js"></script>
+    <script src="js/snowstorm.js"></script>
+    <script type="text/javascript">
+        simpleCart.checkoutTo = PayPal;
+        simpleCart.email = "you@yours.com";
+    </script>
 </head>
 
 <body>
     <div class="sticky">
-        <div id="centeredmenu">
-                <ul>
-                   <li><a href="index.html">Home</a></li>
-                   <li><a href="about.html">About</a></li>
-                   <li><a href="shop.html">Shop</a></li>
-                   <li><a href="customise.html">Make Your Own</a></li>
-                </ul>
-             </div>
-            </div>
-    <header></header>
-<main>
-  <div class="left"></div>
-  <div class="middle"></div>
-  <div class="right"></div>
-</main>
 
-<footer></footer>
+        <div id="centeredmenu">
+            <img src=img/logo.png> <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="customise.html">Make Your Own</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- <header><div class="hero"><img src=img/finest-sweaters.jpg width=800 height=300></div></header> -->
+
+    <main>
+            <div class="left"></div>
+            <div class="middle">
+                <br><br><br><br><br><br><br><h1>Buy one of our pre-made sweaters, uglyness guaranteed!</h1><br>
+                    <div class="simpleCart_shelfItem">
+                            <h2 class="uglySweaterOne"> Ugly Sweater #1 </h2>
+                            <img src=img/emptysweater2.png class="shopSweaters"><br>
+                            <select class="item_size">
+                                <option value="Small"> Small </option>
+                                <option value="Medium"> Medium </option>
+                                <option value="Large"> Large </option>
+                            </select>
+                            <span class="item_price">€30.00</span>
+                            <input value="1" type="text">
+                            <a href="javascript:;" class="item_add"> Add to Basket </a>
+            
+                            <div class="simpleCart_shelfItem">
+                                <h2 class="uglySweaterTwo"> Ugly Sweater #2 </h2>
+                                <img src=img/emptysweater3.png class="shopSweaters"><br>
+                                <select class="item_size">
+                                    <option value="Small"> Small </option>
+                                    <option value="Medium"> Medium </option>
+                                    <option value="Large"> Large </option>
+                                </select>
+                                <span class="item_price">€30.00</span>
+                                <input value="1" type="text">
+                                <a href="javascript:;" class="item_add"> Add to Basket </a>
+            
+                                <div class="simpleCart_shelfItem">
+                                    <h2 class="uglySweaterThree"> Ugly Sweater #3 </h2><br>
+                                    <img src=img/emptysweater4.png class="shopSweaters"><br>
+                                    <select class="item_size">
+                                        <option value="Small"> Small </option>
+                                        <option value="Medium"> Medium </option>
+                                        <option value="Large"> Large </option>
+                                    </select>
+                                    <span class="item_price">€30.00</span>
+                                    <input value="1" type="text">
+                                    <a href="javascript:;" class="item_add"> Add to Basket </a>
+                                    <br><br><br><br><br>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="javascript:;" class="simpleCart_checkout"></a>
+            </div>
+            <div class="right"><br><br><br><br><br><h2>BASKET</h2><br>You have<b><br><span class="simpleCart_quantity"></span></b> items in<br> your Basket.<br>
+                Cart total: <div class="simpleCart_total"></div>
+                <a href="javascript:;" class="simpleCart_checkout">Checkout</a><br>
+                <a href="javascript:;" class="simpleCart_empty">Empty</a></div></div>
+        </main>
+
+    <footer>&copy; Copyright 2018-2019 The Knit Before Christmas</footer>
 
 </body>
 
 <script>
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function () {
+        myFunction()
+    };
 
-// Get the navbar
-let navbar = document.getElementById("navbar");
+    // Get the navbar
+    let navbar = document.getElementById("navbar");
 
-//Get the offset position of the navbar
-let sticky = navbar.offsetTop;
+    //Get the offset position of the navbar
+    let sticky = navbar.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-    if (window.pageYOffset >= sticky) {
-        navbar.classList.add("sticky")
-    } else { 
-        navbar.classList.remove("sticky");
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+        } else {
+            navbar.classList.remove("sticky");
+        }
     }
-}
 </script>
-
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Page Title</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-        <script src="main.js"></script>
-        <script type="text/javascript" src="js/simpleCart.js"></script>
-
-        <script type="text/javascript">
-            simpleCart.checkoutTo = PayPal;
-            simpleCart.email = "you@yours.com";
-            </script>
-    </head>
-
-    <body>
-        <div class="navigation-bar"></div>
-        <ul id="nav">
-            <li class="index"><a href="index.html" data-target="home">Home</a></li>
-            <li class="about"><a href="aboutpage.html" data-target="about">About</a></li>
-            <li class="shop"><a href="shoppage.html" data-target="shop">Shop</a></li>
-        </ul>
-        <br><br><br>
-
-        <div class="simpleCart_shelfItem">
-                <h2 class="uglySweaterOne"> Ugly Sweater #1 </h2>
-                <select class="item_size">
-                <option value="Small"> Small </option>
-                <option value="Medium"> Medium </option>
-                <option value="Large"> Large </option>
-                </select>
-                
-                <span class="item_price">$30</span>
-                
-                
-                <input value="1" type="text">
-                
-                
-                 <a href="javascript:;" class="item_add"> Add to Basket </a>
-                </div>
-    </body>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    snowStorm.flakesMax = 70;
+</script>
 
 </html>

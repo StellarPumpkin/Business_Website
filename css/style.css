@@ -1,3 +1,4 @@
+
 body {
   display: flex;
   flex-direction: column;
@@ -66,6 +67,8 @@ main {
 .right {
   flex: 0 2 150px;
   background-color: rgb(255, 254, 251);
+  font-family: 'Didact Gothic', sans-serif;
+  text-align: center;
 }
 
 .middle {
@@ -94,7 +97,7 @@ main {
   margin: 0;
   padding: 0;
   position: relative;
-  left: 55%;
+  left: 46%;
   top: 20px;
   display: flex;
   justify-content: center;
@@ -137,8 +140,12 @@ main {
   
 }
 
+.shopSweaters {
+  width: 200px;
+  height: 200px;
+}
 footer {
-  flex: 0 0 75px;
+  flex: 0 0 50px;
   background-color: rgb(205, 11, 11);
   color: white;
   text-align: center;
