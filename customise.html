@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="custom.css" />
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Inconsolata|Didact+Gothic" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/interact.js/1.2.6/interact.min.js"></script>
+        <script src="main.js"></script>
+        <script type="text/javascript" src="js/simpleCart.js"></script>
+        <script src="js/snowstorm.js"></script>
+        <script type="text/javascript">
+            simpleCart.checkoutTo = PayPal;
+            simpleCart.email = "you@yours.com";
+        </script>
+    </head>
+
+    <body>
+        <div class="sticky">
+
+            <div id="centeredmenu">
+                <img src=img/logo.png> <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="customise.html">Make Your Own</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--<header></header>-->
+
+        <main>
+
+
+            <div class="left"></div>
+            <div class="middle">
+                <!--Playing with drag and drop-->
+                <h2 class="customheading"><span class="maketheugliest">Make the ugliest </span> sweater possible by
+                    dragging and dropping patches on it!</h2>
+                <div class="holder">
+                    <div class="images">
+                        <img src="img/Patches/a-red.png" alt="Letter A red" class="patch">
+                        <img src="img/Patches/aroundtheworld.png" alt="Globe" class="patch">
+                        <img src="img/Patches/badainteasy.png" alt="Handcuffs and pink color" class="patch">
+                        <img src="img/Patches/ball-blue.png" alt="Blue ball" class="patch">
+                        <img src="img/Patches/ball-red.png" alt="Red ball" class="patch">
+                        <img src="img/Patches/bear.png" alt="Bear" class="patch">
+                        <img src="img/Patches/bluelight.png" alt="Blue light" class="patch">
+                        <img src="img/Patches/boot.png" alt="Boot" class="patch">
+                        <img src="Page Title_files/car-tree-red.png" alt="red car and christmas tree" class="patch">
+                        <img src="img/Patches/collection-glitter-stars.png" alt="glitters" class="patch">
+                        <img src="img/Patches/d-red.png" alt="Letter D red" class="patch">
+                        <img src="img/Patches/earth.png" alt="Earth" class="patch">
+                        <img src="img/Patches/G-red-written.png" alt="Letter G red" class="patch">
+                        <img src="img/Patches/girl-scouts.png" alt="Girl scouts" class="patch">
+                        <img src="img/Patches/go-outside.png" alt="Go outside patch" class="patch">
+                        <img src="img/Patches/greenlight.png" alt="Green light" class="patch">
+                        <img src="img/Patches/lights1.png" alt="Lights" class="patch">
+                        <img src="img/Patches/m-red.png" alt="Letter M red" class="patch">
+                        <img src="img/Patches/orangelight.png" alt="orange light" class="patch">
+                        <img src="img/Patches/ornament.png" alt="ornament" class="patch">
+                        <img src="img/Patches/redlight.png" alt="red light" class="patch">
+                        <img src="img/Patches/santa-baby.png" alt="santa baby" class="patch">
+                        <img src="img//Patches/snowflake.png" alt="Snowflake" class="patch">
+                        <img src="img//Patches/star-gold.png" alt="Gold star" class="patch">
+                        <img src="img/Patches/tree-redgreen.png" alt="Red green tree" class="patch">
+                        <img src="img/Patches/tree.png" alt="tree" class="patch">
+                        <img src="img/Patches/ugly-xmas-sweater.png" alt="Ugly x-mas sweater" class="patch">
+                        <img src="img/Patches/x-red.png" alt="Letter X red" class="patch">
+                        <img src="img/Patches/yellowlight.png" alt="Yellow Light" class="patch">
+
+                    </div>
+
+
+                    <br>
+                    <div id="dropzone" class="dropzone">
+                        <img src="img/emptysweater2.png" alt="sweater" class="sweater">
+                    </div>
+                </div>
+            </div>
+            <div class="simpleCart_shelfItem custominbasket">
+                <select class="item_size">
+                    <option value="Small"> Small </option>
+                    <option value="Medium"> Medium </option>
+                    <option value="Large"> Large </option>
+                </select>
+                <span class="item_price">€30.00</span>
+                <a href="javascript:;" class="item_add"> Add to Basket </a>
+
+                <a href="javascript:;" class="simpleCart_checkout"></a>
+            </div>
+            <div class="custombasketheading"><br><br><br><br><br>
+                <h3>your basket</h3>
+                <br>You have<b><br>
+                    <span class="simpleCart_quantity"></span></b> items in<br> your
+                basket.<br><br>
+                Basket total: <div class="simpleCart_total"></div><br>
+                <a href="javascript:;" class="simpleCart_checkout">Checkout</a><br>
+                <a href="javascript:;" class="simpleCart_empty">Empty</a>
+            </div>
+            <div class="right"></div>
+        </main>
+        <footer>&copy; Copyright 2018-2019 The Knit Before Christmas
+            <a href="https://www.facebook.com/" class="socialmedia facebook" target="_blank"><img src="img/ATEHSnowflakeIcons4/facebook.png"
+                    alt="link to facebok"></a><br>
+            <a href="https://www.instagram.com/" class="socialmedia instagram" target="_blank"><img src="img/ATEHSnowflakeIcons4/instagram.png"
+                    alt="link to Instagram"></a><br>
+            <a href="mailto:natemikele@gmail.com" class="socialmedia email" target="_blank"><img src="img/ATEHSnowflakeIcons4/email.png"
+                    alt="link to send mail"></a>
+        </footer>
+
+    </body>
+
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        // Get the navbar
+        let navbar = document.getElementById("navbar");
+
+        //Get the offset position of the navbar
+        let sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    <script>
+        interact('.patch')
+            .draggable({
+                // enable inertial throwing
+                inertia: true,
+                // keep the element within the area of it's parent
+                restrict: {
+                    restriction: "child",
+                    endOnly: true,
+                    elementRect: {
+                        top: 0,
+                        left: 0,
+                        bottom: 1,
+                        right: 1
+                    }
+                },
+                // enable autoScroll
+                autoScroll: true,
+                // call this function on every dragmove event
+                onmove: dragMoveListener,
+            });
+
+        function dragMoveListener(event) {
+            var target = event.target,
+                // keep the dragged position in the data-x/data-y attributes
+                x = (parseFloat(target.getAttribute('data-x')) || 0) + event.dx,
+                y = (parseFloat(target.getAttribute('data-y')) || 0) + event.dy;
+
+            // translate the element
+            target.style.webkitTransform =
+                target.style.transform =
+                'translate(' + x + 'px, ' + y + 'px)';
+
+            // update the posiion attributes
+            target.setAttribute('data-x', x);
+            target.setAttribute('data-y', y);
+        }
+
+        // enable draggables to be dropped into this
+        interact('.dropzone').dropzone({
+            // Require a 50% element overlap for a drop to be possible
+            overlap: 0.50,
+
+            // listen for drop related events:
+
+            ondropactivate: function (event) {
+                // add active dropzone feedback
+                event.target.classList.add('drop-active');
+            },
+            ondragenter: function (event) {
+                var draggableElement = event.relatedTarget,
+                    dropzoneElement = event.target;
+
+                // feedback the possibility of a drop
+                dropzoneElement.classList.add('drop-target');
+            },
+            ondragleave: function (event) {
+                // remove the drop feedback style
+                event.target.classList.remove('drop-target');
+            },
+            /*ondrop: function (event) {
+              event.relatedTarget.textContent = 'Dropped';
+            },*/
+            ondropdeactivate: function (event) {
+                // remove active dropzone feedback
+                event.target.classList.remove('drop-active');
+                event.target.classList.remove('drop-target');
+            }
+        });
+    </script>
+
+    <script>
+        snowStorm.flakesMax = 70;
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        simpleCart.
+        simpleCart.currency("EUR")
+    </script>
+
+</html>
